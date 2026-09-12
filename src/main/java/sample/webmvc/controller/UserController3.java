@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/electronics")
-public class UserController {
+@RequestMapping("/kitchen")
+public class UserController3 {
 
 	@RequestMapping("/")
 	public String greet() {
 		System.out.println("UserController.greet()");
-		return "electronics";
+		return "kitchen";
 	}
 	
 //	/WEB-INF/JSP/welcome.jsp
