@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import sample.webmvc.service.UserService;
+
 
 @Controller
 public class UserController {
+	
+	private UserService userService;
 
 //	@RequestParam Can read Query Parameter
 	@GetMapping("/")
