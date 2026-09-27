@@ -7,25 +7,22 @@ import javax.persistence.Id;
 
 @Entity
 public class User {
-	
+
 	@Id
-	@GeneratedValue(strategy =  GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	private String name, gender, address;
 	
 	public User() {
 		super();
 	}
 
-	public User(int id, String name, String gender, String address) {
-		super();
-		this.id = id;
+	public User( String name, String gender, String address) {
 		this.name = name;
 		this.gender = gender;
 		this.address = address;
 	}
-	
 
 	public int getId() {
 		return id;
