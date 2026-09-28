@@ -9,7 +9,7 @@
 <body>
 
 	<h1>Hello User This is your welcome web Page</h1>
-	<h1>Hello User This is your name: ${user}</h1>
+	
 	
 </body>
 </html>
