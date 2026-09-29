@@ -19,9 +19,15 @@ public class UserService {
 	}
 
 
-	@Transactional
+	@Transactional(readOnly = false)
 	public void saveUser(User user) {
 		userDao.saveUser(user);
+	}
+
+
+	public User getUserById(int id) {
+		System.out.println("UserService.getUserById()");
+		return userDao.getUserById(id);
 	}
 
 }

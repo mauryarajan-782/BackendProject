@@ -25,4 +25,10 @@ public class UserDao {
 		System.out.println("UserDao.saveUser()");
 	}
 
+	public User getUserById(int id) {
+		System.out.println("UserDao.getUserById()");
+		
+		return hibernateTemplate.get(User.class, id);
+	}
+
 }
