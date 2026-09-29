@@ -20,9 +20,9 @@ public class UserDao {
 	}
 
 	@Transactional
-	public void saveUser(User user) {
+	public User saveUser(User user) {
 		hibernateTemplate.save(user);
-		System.out.println("UserDao.saveUser()");
+		return user;
 	}
 
 	public User getUserById(int id) {
